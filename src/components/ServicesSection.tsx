@@ -6,12 +6,12 @@ export const ServicesSection: React.FC = () => {
   return (
     <section
       id="skills"
-      className="relative w-full bg-[#0C0C0C] px-5 sm:px-8 md:px-10 z-0 pt-5 border-t border-white/30"
+      className="relative w-full bg-[#0C0C0C] px-5 sm:px-8 md:px-10 z-0 "
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading styled like ABOUT ME */}
         <FadeIn delay={0} y={30} duration={0.8}>
-          <h2 className="hero-heading font-black uppercase text-center mb-16 sm:mb-20 md:mb-28 text-[clamp(3rem,12vw,160px)]">
+          <h2 className="hero-heading font-black uppercase text-center mb-8 sm:mb-10 md:mb-12 text-[clamp(3rem,12vw,160px)]">
             Skills
           </h2>
         </FadeIn>

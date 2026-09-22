@@ -9,11 +9,11 @@ export const ProjectsSection: React.FC = () => {
   return (
     <section
       id="projects"
-      className="relative w-full bg-[#0C0C0C]  z-10 px-5 sm:px-8 md:px-10  pt-8 border-t border-white/20 -mb-20" 
+      className="relative w-full bg-[#0C0C0C]  z-10 px-5 sm:px-8 md:px-10" 
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <FadeIn delay={0} y={30} duration={0.8} className="w-full mb-14 sm:mb-20 md:mb-24 text-center">
+        <FadeIn delay={0} y={30} duration={0.8} className="w-full mb-8 sm:mb-10 md:mb-12 text-center">
           <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)]">
             Projects
           </h2>

@@ -15,14 +15,14 @@ export default function PortfolioPage() {
   return (
     <main
       id="portfolio-main"
-      className="relative w-full bg-[#0C0C0C] text-[#D7E2EA] overflow-x-clip flex flex-col gap-40"
+      className="relative w-full bg-[#0C0C0C] text-[#D7E2EA] overflow-x-clip flex flex-col gap-40 md:gap-50 lg:gap-60"
       style={{ overflowX: "clip" }}
     >
       {/* 1. HeroSection */}
       <HeroSection onContactClick={() => setIsContactOpen(true)} />
 
       {/* 2. MarqueeSection */}
-      <div className="rounded-[40px] sm:rounded-[50px] md:rounded-[60px] pt-10 py-30 border-y border-white/40 flex flex-col gap-40">
+      <div className="flex flex-col gap-40  lg:gap-50">
         {/* 3. AboutSection */}
         <AboutSection onContactClick={() => setIsContactOpen(true)} />
 
@@ -31,12 +31,12 @@ export default function PortfolioPage() {
 
         {/* 5. ProjectsSection */}
         <ProjectsSection />
-
-        <MarqueeSection />
       </div>
       {/* Footer */}
-      <Footer onContactClick={() => setIsContactOpen(true)} />
-
+      <div className=" w-full flex flex-col gap-2 md:gap-5 lg:gap-10">
+        <Footer onContactClick={() => setIsContactOpen(true)} />
+        {/* <MarqueeSection /> */}
+      </div>
       {/* Contact Modal */}
       <ContactModal
         isOpen={isContactOpen}
