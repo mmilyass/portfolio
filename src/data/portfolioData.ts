@@ -106,7 +106,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     tags: ["React", "Tailwind CSS", "E-commerce UI", "Arabic-first", "Motion"],
     hasLiveProject: true,
     liveUrl: "https://waqarscent.com",
-    githubUrl: "https://github.com/mmilyass/waqarscent",
+    githubUrl: "https://github.com/mmilyass/waqarScent",
     images: {
       leftTop:
         "/assets/images/waqar-1.png", // Luxury fragrance bottle close-up
@@ -125,8 +125,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "A web application where Ilyass worked on the frontend using Next.js and Tailwind CSS, contributing to the interface, visual design, and user experience.",
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "WebSocket", "UI/UX"],
     hasLiveProject: true,
-    liveUrl: "https://github.com/ilyassmeftah/transcendence",
-    githubUrl: "https://github.com/mmilyass/ft_transcendence.1337",
+    liveUrl: "https://github.com/mmilyass/ft_transcendence",
+    githubUrl: "https://github.com/mmilyass/ft_transcendence",
     images: {
       leftTop:
         "/assets/images/maou3idy1.png", // Futuristic game neon wave
@@ -145,7 +145,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "A custom HTTP web server built as part of the 1337/42 curriculum using C++ and C, demonstrating understanding of HTTP, sockets, non-blocking I/O, epoll, CGI, and server architecture.",
     tags: ["C++98", "HTTP 1.1", "Sockets", "Non-blocking I/O", "epoll", "CGI"],
     hasLiveProject: false, // Per prompt: disabled / non-link visual element rather than fake URL
-    githubUrl: "https://github.com/ybounite/webserv",
+    githubUrl: "https://github.com/mmilyass/web-server-",
     images: {
       leftTop:
         "/assets/images/server1.jpeg", // Server rack networking hardware
