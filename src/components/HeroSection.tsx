@@ -76,8 +76,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onContactClick }) => {
         </div>
         <FadeIn delay={0.3} y={20} duration={0.7}>
           <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[320px] md:max-w-[400px] text-[clamp(0.75rem,1.4vw,1.5rem)]">
-            a frontend developer focused on building modern, interactive, and
-            memorable web experiences
+          a full-stack developer focused on building modern, interactive, and memorable web experiences
           </p>
         </FadeIn>
 

@@ -1,16 +1,18 @@
-import React from 'react';
-import { FadeIn } from './FadeIn';
-import { AnimatedText } from './AnimatedText';
-import { ContactButton } from './ContactButton';
-import { ABOUT_DECORATIVE_ASSETS } from '../data/portfolioData';
+import React from "react";
+import { FadeIn } from "./FadeIn";
+import { AnimatedText } from "./AnimatedText";
+import { ContactButton } from "./ContactButton";
+import { ABOUT_DECORATIVE_ASSETS } from "../data/portfolioData";
 
 interface AboutSectionProps {
   onContactClick: () => void;
 }
 
-export const AboutSection: React.FC<AboutSectionProps> = ({ onContactClick }) => {
+export const AboutSection: React.FC<AboutSectionProps> = ({
+  onContactClick,
+}) => {
   const bioText =
-    "I'm Ilyass, a frontend developer and 1337 Coding School student who completed the Common Core. I enjoy building modern and interactive web experiences, with a strong focus on clean interfaces, responsive design, and smooth user experiences. I work mainly with Next.js, React, TypeScript, and Tailwind CSS, and I enjoy turning ideas and designs into real products.";
+    "I'm Ilyass, a full-stack developer and 1337 Coding School graduate who completed the Common Core. I enjoy building modern web applications and turning ideas and designs into real products, with a strong focus on clean interfaces, responsive design, and great user experiences. I specialize in frontend development with React, Next.js, TypeScript, and Tailwind CSS, while also working with NestJS, Prisma, and PostgreSQL to build full-stack applications.";
 
   return (
     <section
@@ -48,7 +50,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onContactClick }) =>
       {/* Main Centered Content */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto my-auto">
         {/* Heading */}
-        <FadeIn delay={0} y={40} duration={0.8} className="w-full mb-8 sm:mb-10 md:mb-12">
+        <FadeIn
+          delay={0}
+          y={40}
+          duration={0.8}
+          className="w-full mb-8 sm:mb-10 md:mb-12"
+        >
           <h2 className="hero-heading font-black uppercase leading-none tracking-tight text-center text-[clamp(3rem,12vw,160px)]">
             About me
           </h2>
@@ -56,10 +63,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onContactClick }) =>
 
         {/* Animated paragraph */}
         <div className="w-full mb-10 sm:mb-12 md:mb-14 px-2">
-          <AnimatedText
-            id="about-bio-text"
-            text={bioText}
-          />
+          <AnimatedText id="about-bio-text" text={bioText} />
         </div>
 
         {/* Contact Button */}

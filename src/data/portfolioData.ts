@@ -1,4 +1,4 @@
-import { ProjectItem, SkillItem, DecorativeAsset } from '../types';
+import { ProjectItem, SkillItem, DecorativeAsset } from "../types";
 
 // Curated high-res 3D digital art and renders matching the 3D-inspired aesthetic
 export const MARQUEE_IMAGES_ROW1: string[] = [
@@ -22,7 +22,10 @@ export const MARQUEE_IMAGES_ROW2: string[] = [
 ];
 
 // All 21 images combined
-export const ALL_MARQUEE_IMAGES = [...MARQUEE_IMAGES_ROW1, ...MARQUEE_IMAGES_ROW2];
+export const ALL_MARQUEE_IMAGES = [
+  ...MARQUEE_IMAGES_ROW1,
+  ...MARQUEE_IMAGES_ROW2,
+];
 
 // Four decorative 3D floating images for the corners of About section
 export const ABOUT_DECORATIVE_ASSETS: DecorativeAsset[] = [
@@ -66,31 +69,31 @@ export const SKILLS_DATA: SkillItem[] = [
     number: "01",
     title: "Frontend Development",
     description:
-      "Building modern, responsive, and interactive web applications with a strong focus on performance, usability, and clean architecture.",
+      "Building modern, responsive, and interactive web applications with React, Next.js, TypeScript, JavaScript, HTML, CSS, and Tailwind CSS.",
   },
   {
     number: "02",
-    title: "Next.js",
+    title: "Backend Development",
     description:
-      "Developing production-ready applications with Next.js, using the App Router, reusable components, routing, server-side capabilities, and modern React patterns.",
+      "Building REST APIs and backend services with NestJS, working with Prisma and PostgreSQL to handle data, business logic, and application architecture.",
   },
   {
     number: "03",
-    title: "TypeScript",
+    title: "Programming",
     description:
-      "Writing safer and more maintainable frontend applications with strong typing, interfaces, reusable types, and clear component structures.",
+      "Strong programming fundamentals developed through C and C++, with experience in data structures, algorithms, memory management, processes, and networking.",
   },
   {
     number: "04",
-    title: "UI Development",
+    title: "Database & APIs",
     description:
-      "Turning designs and ideas into polished, responsive interfaces with careful attention to spacing, typography, animations, and user experience.",
+      "Working with PostgreSQL and Prisma for database management, and building and consuming REST APIs to connect frontend applications with backend services.",
   },
   {
     number: "05",
-    title: "Responsive Design",
+    title: "Tools & DevOps",
     description:
-      "Creating web experiences that work smoothly across mobile, tablet, desktop, and large screens while maintaining a consistent visual experience.",
+      "Using Git, GitHub, Docker, Linux, Postman, and Vercel to manage code, develop, test, deploy, and maintain applications.",
   },
 ];
 
@@ -100,20 +103,25 @@ export const PROJECTS_DATA: ProjectItem[] = [
     id: "waqar-scent",
     number: "01",
     name: "Waqar Scent",
-    category: "Client / E-commerce",
+    category: "Client / Full-Stack E-commerce",
     description:
-      "A modern fragrance brand website built with React, Tailwind CSS, and a strong focus on Arabic-first visual design, responsive layouts, product presentation, and conversion-focused UI.",
-    tags: ["React", "Tailwind CSS", "E-commerce UI", "Arabic-first", "Motion"],
+      "A modern e-commerce platform for a fragrance brand, built with React and Tailwind CSS. The project includes two backend implementations: Supabase for data management and a custom NestJS API using Prisma and PostgreSQL, with a strong focus on Arabic-first design, responsive layouts, and product presentation.",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Supabase",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "E-commerce",
+    ],
     hasLiveProject: true,
     liveUrl: "https://waqarscent.com",
     githubUrl: "https://github.com/mmilyass/waqarScent",
     images: {
-      leftTop:
-        "/assets/images/waqar-1.png", // Luxury fragrance bottle close-up
-      leftBottom:
-        "/assets/images/logo_white.png", // Elegant dark luxury perfume composition
-      rightTall:
-        "/assets/images/waqar-2.png", // High-end perfume product layout with glass reflections
+      leftTop: "/assets/images/waqar-1.png",
+      leftBottom: "/assets/images/logo_white.png",
+      rightTall: "/assets/images/waqar-2.png",
     },
   },
   {
@@ -128,12 +136,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
     liveUrl: "https://github.com/mmilyass/ft_transcendence",
     githubUrl: "https://github.com/mmilyass/ft_transcendence",
     images: {
-      leftTop:
-        "/assets/images/maou3idy1.png", // Futuristic game neon wave
-      leftBottom:
-        "/assets/images/MAOU3IDY.png", // Retro-futuristic arcade / cyberpunk hardware
-      rightTall:
-        "/assets/images/maou3idy2.png", // Interactive gaming interface and digital displays
+      leftTop: "/assets/images/maou3idy1.png", // Futuristic game neon wave
+      leftBottom: "/assets/images/MAOU3IDY.png", // Retro-futuristic arcade / cyberpunk hardware
+      rightTall: "/assets/images/maou3idy2.png", // Interactive gaming interface and digital displays
     },
   },
   {
@@ -147,12 +152,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
     hasLiveProject: false, // Per prompt: disabled / non-link visual element rather than fake URL
     githubUrl: "https://github.com/mmilyass/web-server-",
     images: {
-      leftTop:
-        "/assets/images/server1.jpeg", // Server rack networking hardware
-      leftBottom:
-        "/assets/images/server2.jpeg", // Low-level systems code & terminal interface
-      rightTall:
-        "/assets/images/server3.jpeg", // High-throughput data streams & network sockets
+      leftTop: "/assets/images/server1.jpeg", // Server rack networking hardware
+      leftBottom: "/assets/images/server2.jpeg", // Low-level systems code & terminal interface
+      rightTall: "/assets/images/server3.jpeg", // High-throughput data streams & network sockets
     },
   },
 ];

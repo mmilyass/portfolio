@@ -30,7 +30,8 @@ export const ContactModal: React.FC<ContactModalProps> = ({
 
   const email = "ilyassmeftah06@gmail.com";
   const github = "https://github.com/mmilyass";
-  const linkedin = "https://www.linkedin.com/in/ilyass-meftah-el-menani-917841362/";
+  const linkedin =
+    "https://www.linkedin.com/in/ilyass-meftah-el-menani-917841362/";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -41,7 +42,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/assets/images/resume.pdf";
-    link.download = "Ilyass_Meftah_Frontend_Developer_Resume.pdf";
+    link.download = "Ilyass_Meftah_Full_Stack_Developer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -49,6 +50,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
     setDownloadSuccess(true);
     setTimeout(() => setDownloadSuccess(false), 2500);
   };
+
   const handlePrint = () => {
     window.print();
   };
@@ -78,17 +80,19 @@ export const ContactModal: React.FC<ContactModalProps> = ({
             <div className="flex items-center justify-between px-6 sm:px-8 py-5 border-b border-white/10 bg-[#0C0C0C]/90 backdrop-blur-sm shrink-0">
               <div className="flex items-center gap-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+
                 <div>
                   <h3 className="hero-heading text-lg sm:text-xl font-bold uppercase tracking-tight">
                     Ilyass Meftah — Resume
                   </h3>
+
                   <p className="text-[11px] sm:text-xs text-[#D7E2EA]/60 uppercase tracking-wider">
-                    Frontend Developer &bull; 1337 Student
+                    Full-Stack Developer &bull; 1337 Graduate
                   </p>
                 </div>
               </div>
 
-              {/* Action Buttons: Download, Print, Close */}
+              {/* Action Buttons */}
               <div className="flex items-center gap-2 sm:gap-3">
                 <button
                   id="download-resume-btn"
@@ -135,8 +139,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white">
                     Ilyass Meftah
                   </h1>
+
                   <p className="hero-heading text-lg sm:text-xl font-bold uppercase tracking-wider mt-1">
-                    Frontend Developer
+                    Frontend-Focused Full-Stack Developer
                   </p>
                 </div>
 
@@ -148,7 +153,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     title="Click to copy email"
                   >
                     <Mail className="w-3.5 h-3.5 text-[#B600A8]" />
+
                     <span>{email}</span>
+
                     {copied ? (
                       <Check className="w-3 h-3 text-emerald-400 ml-1" />
                     ) : (
@@ -174,7 +181,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/15 hover:bg-white/10 transition-colors text-[#D7E2EA]"
                   >
                     <Linkedin className="w-3.5 h-3.5" />
-                    <span>Linkedin</span>
+                    <span>LinkedIn</span>
                     <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
                   </a>
                 </div>
@@ -186,13 +193,15 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <Briefcase className="w-3.5 h-3.5" />
                   <span>About &amp; Summary</span>
                 </h2>
+
                 <p className="text-sm sm:text-base text-[#D7E2EA]/90 font-light leading-relaxed">
-                  Frontend developer focused on building modern, interactive,
-                  and memorable web experiences. 1337 Coding School student who
-                  completed the Common Core curriculum. Specialized in Next.js
-                  (App Router), React, TypeScript, and Tailwind CSS, combining
-                  meticulous UI/UX craftsmanship with robust system fundamentals
-                  in C/C++ and network architecture.
+                  Frontend-focused Full-Stack Developer and 1337 Coding School
+                  graduate, part of the 42 Network. Experienced with React,
+                  Next.js, TypeScript, and Tailwind CSS, with additional
+                  experience building backend APIs using NestJS, Prisma, and
+                  PostgreSQL. Strong foundation in C/C++, networking, and
+                  system architecture, with a passion for building modern and
+                  interactive web applications.
                 </p>
               </div>
 
@@ -202,40 +211,47 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <Code className="w-3.5 h-3.5" />
                   <span>Technical Skills</span>
                 </h2>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  {/* Frontend */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4">
                     <span className="text-xs font-semibold text-white uppercase tracking-wider block mb-2">
-                      Frontend Core
+                      Frontend
                     </span>
+
                     <p className="text-xs text-[#D7E2EA]/80 leading-relaxed font-light">
-                      Next.js (App Router), React 19, TypeScript, JavaScript
-                      (ES6+), Tailwind CSS, Framer Motion, Responsive Design
+                      React, Next.js (App Router), TypeScript, JavaScript
+                      (ES6+), Tailwind CSS, Framer Motion, Responsive Design,
+                      UI/UX
                     </p>
                   </div>
 
+                  {/* Backend & Database */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4">
                     <span className="text-xs font-semibold text-white uppercase tracking-wider block mb-2">
-                      Systems &amp; Backend
+                      Backend &amp; Database
                     </span>
+
                     <p className="text-xs text-[#D7E2EA]/80 leading-relaxed font-light">
-                      C++, C, Sockets API, epoll multiplexing, Non-blocking I/O,
-                      HTTP 1.1 protocol, CGI, RESTful APIs
+                      NestJS, REST APIs, Prisma ORM, PostgreSQL, Supabase
                     </p>
                   </div>
 
+                  {/* Systems & Tools */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4 sm:col-span-2 md:col-span-1">
                     <span className="text-xs font-semibold text-white uppercase tracking-wider block mb-2">
-                      Tools &amp; Workflow
+                      Systems &amp; Tools
                     </span>
+
                     <p className="text-xs text-[#D7E2EA]/80 leading-relaxed font-light">
-                      Git, GitHub, Docker, Linux/Unix Terminal, Vite, Component
-                      Architecture, Figma-to-Code
+                      C, C++98, Sockets, epoll, HTTP 1.1, CGI, Git, GitHub,
+                      Docker, Linux
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Projects */}
+              {/* Featured Projects */}
               <div>
                 <h2 className="text-xs uppercase font-bold tracking-widest text-[#B600A8] mb-3 flex items-center gap-2">
                   <Terminal className="w-3.5 h-3.5" />
@@ -243,29 +259,35 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                 </h2>
 
                 <div className="space-y-4">
-                  {/* Project 1 */}
+                  {/* Project 1 — WAQAR */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4 sm:p-5">
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1.5">
                       <h3 className="text-base sm:text-lg font-bold text-white uppercase tracking-tight">
                         Waqar Scent
                       </h3>
+
                       <span className="text-xs text-[#B600A8] font-mono uppercase tracking-wider">
-                        Client / E-commerce &bull; React, Tailwind CSS
+                        Client / Full-Stack E-commerce
                       </span>
                     </div>
+
                     <p className="text-xs sm:text-sm text-[#D7E2EA]/80 font-light leading-relaxed mb-3">
-                      A modern fragrance brand website built with React,
-                      Tailwind CSS, and a strong focus on Arabic-first visual
-                      design, responsive layouts, product presentation, and
-                      conversion-focused UI.
+                      A modern e-commerce platform for a fragrance brand built
+                      with React and Tailwind CSS. Developed two backend
+                      implementations: one using Supabase for data management
+                      and another using NestJS with Prisma and PostgreSQL,
+                      including REST APIs for application functionality.
                     </p>
+
                     <div className="flex flex-wrap gap-1.5">
                       {[
                         "React",
                         "Tailwind CSS",
-                        "Arabic-first",
-                        "E-commerce UI",
-                        "Framer Motion",
+                        "Supabase",
+                        "NestJS",
+                        "Prisma",
+                        "PostgreSQL",
+                        "E-commerce",
                       ].map((tag) => (
                         <span
                           key={tag}
@@ -277,22 +299,25 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     </div>
                   </div>
 
-                  {/* Project 2 */}
+                  {/* Project 2 — Transcendence */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4 sm:p-5">
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1.5">
                       <h3 className="text-base sm:text-lg font-bold text-white uppercase tracking-tight">
                         Transcendence
                       </h3>
+
                       <span className="text-xs text-[#B600A8] font-mono uppercase tracking-wider">
                         Team Project &bull; Next.js, Tailwind, WebSockets
                       </span>
                     </div>
+
                     <p className="text-xs sm:text-sm text-[#D7E2EA]/80 font-light leading-relaxed mb-3">
                       A full-scale web application where Ilyass worked on the
                       frontend using Next.js and Tailwind CSS, contributing to
                       the responsive interface, visual design, user experience,
                       and real-time multiplayer synchronization.
                     </p>
+
                     <div className="flex flex-wrap gap-1.5">
                       {[
                         "Next.js",
@@ -311,16 +336,18 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     </div>
                   </div>
 
-                  {/* Project 3 */}
+                  {/* Project 3 — Webserv */}
                   <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4 sm:p-5">
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1.5">
                       <h3 className="text-base sm:text-lg font-bold text-white uppercase tracking-tight">
                         Webserv
                       </h3>
+
                       <span className="text-xs text-[#B600A8] font-mono uppercase tracking-wider">
                         C/C++ Project &bull; 1337 / 42 School
                       </span>
                     </div>
+
                     <p className="text-xs sm:text-sm text-[#D7E2EA]/80 font-light leading-relaxed mb-3">
                       A custom HTTP web server built as part of the 1337/42
                       curriculum using C++ and C, demonstrating deep
@@ -328,6 +355,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                       multiplexing with epoll, CGI scripts, and server
                       architecture.
                     </p>
+
                     <div className="flex flex-wrap gap-1.5">
                       {[
                         "C++98",
@@ -355,18 +383,22 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <GraduationCap className="w-3.5 h-3.5" />
                   <span>Education</span>
                 </h2>
+
                 <div className="bg-[#0C0C0C] border border-white/10 rounded-2xl p-4 sm:p-5">
                   <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
                     <h3 className="text-base font-bold text-white uppercase tracking-tight">
                       1337 Coding School (42 Network)
                     </h3>
+
                     <span className="text-xs text-[#D7E2EA]/70 font-mono">
                       Morocco
                     </span>
                   </div>
+
                   <p className="text-xs text-[#B600A8] font-medium uppercase tracking-wider mb-2">
                     Common Core Graduate &bull; Software Engineering
                   </p>
+
                   <p className="text-xs sm:text-sm text-[#D7E2EA]/80 font-light leading-relaxed">
                     Intensive peer-to-peer curriculum emphasizing autonomous
                     problem-solving, algorithms, low-level architecture, Unix
